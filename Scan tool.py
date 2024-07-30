@@ -9,7 +9,7 @@ RED = "\033[91m"
 NEON_PURPLE = "\033[95m"
 RESET = "\033[0m"
 
-# Logo e considerações com cores
+
 print(f""" \n
 {RED}
 
@@ -34,4 +34,11 @@ ports = [22,21,20,443,445,80,8080,9009,9991,7070,3333,4040]
 host = str(input("Insira o alvo: "))
 
 for port in ports:
+     socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+     socket.timeout(0.5)
+     code = socket.connect_ex((host, port))
+     if 0 in code:
+         print(f"{port} \\\ open ")
+     else:
+          pass
      
