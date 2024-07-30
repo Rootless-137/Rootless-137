@@ -30,6 +30,7 @@ Aviso: Não sou responsável pelo mau uso desta ferramenta.
 
 ports = [22,21,20,443,445,80,8080,9009,9991,7070,3333,4040]
 
+r = 0
 i = 0
 
 host = str(input("Insira o alvo: "))
@@ -45,6 +46,6 @@ for port in ports:
          i = i + 1
          print(f" -> {port} || OPEN  ")
      else:
-          pass
+         print(f" -> {port} || CLOSED  ")
      
-print(f"\n{NEON_PURPLE} O SCAN ENCONTROU {i} PORTAS {RESET}")
+print(f"\n{NEON_PURPLE} O SCAN ENCONTROU {i} PORTAS ABERTAS e {r} FECHADAS {RESET}")
