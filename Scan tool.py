@@ -44,9 +44,9 @@ for port in ports:
      code = client.connect_ex((host, port))
      if code == 0:
          i = i + 1
-         print(f" -> {port}", "|| OPEN  ")
+         print(f" -> {port}", "|| OPEN °")
      else:
          r = r + 1
-         print(f" -> {port}", "|| CLOSED  ")
+         print(f" -> {port}", "|| CLOSED •")
      
 print(f"\n{NEON_PURPLE} O SCAN ENCONTROU {i} PORTAS ABERTAS e {r} FECHADAS {RESET}")
