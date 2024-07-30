@@ -32,6 +32,8 @@ ports = [22,21,20,443,445,80,8080,9009,9991,7070,3333,4040]
 
 host = str(input("Insira o alvo: "))
 
+print(f"\n{RED} ! O SCAN ESTÁ EM ANDAMENTO ! {RESET}\n")
+
 for port in ports:
      client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
      client.settimeout(0.5)
