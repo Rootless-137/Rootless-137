@@ -33,9 +33,9 @@ ports = [22,21,20,443,445,80,8080,9009,9991,7070,3333,4040]
 host = str(input("Insira o alvo: "))
 
 for port in ports:
-     socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-     socket.settimeout(0.5)
-     code = socket.connect_ex((host, port))
+     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+     client.settimeout(0.5)
+     code = client.connect_ex((host, port))
      if code == 0:
          print(f"{port} \\\ open ")
      else:
