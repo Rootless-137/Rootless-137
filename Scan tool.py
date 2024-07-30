@@ -37,7 +37,7 @@ for port in ports:
      client.settimeout(0.5)
      code = client.connect_ex((host, port))
      if code == 0:
-         print(f"{port} \\\ open ")
+         print(f" -> {port} || OPEN  ")
      else:
           pass
      
