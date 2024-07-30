@@ -36,7 +36,7 @@ for port in ports:
      socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
      socket.settimeout(0.5)
      code = socket.connect_ex((host, port))
-     if 0 in code:
+     if code == 0:
          print(f"{port} \\\ open ")
      else:
           pass
