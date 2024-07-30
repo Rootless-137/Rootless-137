@@ -34,7 +34,7 @@ host = str(input("Insira o alvo: "))
 
 for port in ports:
      socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-     socket.timeout(0.5)
+     socket.settimeout(0.5)
      code = socket.connect_ex((host, port))
      if 0 in code:
          print(f"{port} \\\ open ")
