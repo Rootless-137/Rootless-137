@@ -46,6 +46,7 @@ for port in ports:
          i = i + 1
          print(f" -> {port} || OPEN  ")
      else:
+         r = r + 1
          print(f" -> {port} || CLOSED  ")
      
 print(f"\n{NEON_PURPLE} O SCAN ENCONTROU {i} PORTAS ABERTAS e {r} FECHADAS {RESET}")
