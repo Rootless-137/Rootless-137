@@ -27,7 +27,6 @@ Aviso: Não sou responsável pelo mau uso desta ferramenta.
 
 \n""")
 
-print(logo)
 
 ports = [22,21,20,443,445,80,8080,9009,9991,7070,3333,4040]
 
