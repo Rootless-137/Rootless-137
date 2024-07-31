@@ -4,7 +4,7 @@ import argparse
 import os
 import re
 
-# Limpa o terminal
+# Likmpa o terminal
 os.system('clear')
 
 # Cores para o terminal
