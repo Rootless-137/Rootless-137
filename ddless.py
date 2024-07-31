@@ -18,13 +18,13 @@ print(f"""\n
  `___'<___/|___||___><___/<___/
   
 {RESET}
-{NEON_PURPLE 
+{NEON_PURPLE}
 Autor: ROOTLESS
 AVISO: Este código é fornecido apenas para fins educacionais. 
 O autor não se responsabiliza por qualquer uso indevido ou 
 atividades ilegais realizadas com este código. Use-o 
 exclusivamente em ambientes controlados e com permissão.                          
-{NEON_PURPLE}
+{RESET}
 
 
 \n""")
